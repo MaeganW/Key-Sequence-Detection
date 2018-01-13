@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://www.cornify.com/js/cornify.js"></script>
     <title>Key Sequence Detection</title>
 </head>
 <body>
 
     <script>
         const pressedKeys = [];
-        const secretCode = 'javascript';
+        const secretCode = 'js';
 
         window.addEventListener('keyup', e => {
             pressedKeys.push(e.key);
             pressedKeys.splice(-secretCode -1, pressedKeys.length - secretCode.length);
             console.log(pressedKeys);
+
+            if(pressedKeys.join('').includes(secretCode)) {
+                console.log('Congrats, mortal. Unicorns await you...');
+                cornify_add();
+            }
         })
     </script>
 </body>

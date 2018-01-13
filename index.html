@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Key Sequence Detection</title>
+</head>
+<body>
+
+    <script>
+        const pressedKeys = [];
+        const secretCode = 'javascript';
+
+        window.addEventListener('keyup', e => {
+            pressedKeys.push(e.key);
+            pressedKeys.splice(-secretCode -1, pressedKeys.length - secretCode.length);
+            console.log(pressedKeys);
+        })
+    </script>
+</body>
+</html>

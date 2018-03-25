@@ -1,0 +1,23 @@
+{
+  "name": "key-sequence-detection",
+  "version": "1.0.0",
+  "description": "Wes Bos' 30 Days of Javascript Challenge: Day 12",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaeganW/Key-Sequence-Detection.git"
+  },
+  "author": "Maegan Womble",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaeganW/Key-Sequence-Detection/issues"
+  },
+  "homepage": "https://github.com/MaeganW/Key-Sequence-Detection#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
